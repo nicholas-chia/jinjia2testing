@@ -1,0 +1,6 @@
+users:
+{% for i in range(1,STUDENTS+1) %}
+  - name: Student{{ i }}
+    username: student{{ i }}
+    email: {{ EMAIL }}
+{% endfor %}
